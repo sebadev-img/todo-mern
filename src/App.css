@@ -1,38 +1,93 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin-top: 36px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  width: 600px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* FORM */
+.form-container {
+  margin-top: 24px;
+  display: flex;
+}
+
+.form-container input {
+  width: 300px;
+  height: 40px;
+  padding-left: 8px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 4px 8px;
+  width: 66px;
+  background-color: #eb6a6a;
+  border: 1px solid #eb6a6a;
   color: white;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transition: opacity 0.15s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container button:hover {
+  opacity: 0.9;
+}
+.form-container button:active {
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LIST */
+
+.list-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  margin-top: 12px;
+  border-top: 1px solid lightgray;
+  width: 400px;
+  position: relative;
+}
+
+.item-container p {
+  margin-top: 6px;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.del-btn {
+  border: none;
+  background-color: white;
+  color: #c75a5a;
+  padding: 2px 2px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
