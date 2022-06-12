@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-mern/static/css/main.474c055f.css",
+    "main.js": "/todo-mern/static/js/main.53a8bc46.js",
+    "index.html": "/todo-mern/index.html",
+    "main.474c055f.css.map": "/todo-mern/static/css/main.474c055f.css.map",
+    "main.53a8bc46.js.map": "/todo-mern/static/js/main.53a8bc46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.474c055f.css",
+    "static/js/main.53a8bc46.js"
+  ]
+}
